@@ -18,7 +18,7 @@ canvas {
 var myGamePiece;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "olleharhäng.png", 10, 120, "image");
+    myGamePiece = new component(30, 30, "olleharhäng.PNG", 10, 120, "image");
     myGameArea.start();
 }
 
@@ -77,7 +77,7 @@ function updateGameArea() {
 }
 
 function move(dir) {
-    myGamePiece.image.src = "olle23.png";
+    myGamePiece.image.src = "olle23.PNG";
     if (dir == "up") {myGamePiece.speedY = -1; }
     if (dir == "down") {myGamePiece.speedY = 1; }
     if (dir == "left") {myGamePiece.speedX = -1; }
@@ -85,7 +85,7 @@ function move(dir) {
 }
 
 function clearmove() {
-    myGamePiece.image.src = "olle23.png";
+    myGamePiece.image.src = "olle23.PNG";
     myGamePiece.speedX = 0; 
     myGamePiece.speedY = 0; 
 }
